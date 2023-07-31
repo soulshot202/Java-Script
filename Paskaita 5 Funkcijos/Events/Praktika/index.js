@@ -1,91 +1,48 @@
-// uzduotis 1
-
-const vardas = "Vytautas";
-const names = function (name) {
-  alert(name);
-};
-
-/// uzduotis 2
-function random(min = 1, max = 5) {
-  let num = Math.random();
-  num = num * max;
-  num = num + min;
-  num = Math.floor(num);
-  console.log(num);
-  return num;
+//uzduotis 1
+/* function alertas() {
+  alert("Vytautas");
 }
-//console.log(random());
+*/
+// uzduotis 2
+document.querySelector("#name").addEventListener("click", () => alert("Vytautas"));
+//document.querySelector("#name").addEventListener("click", tuk());
+function tuk(x) {
+  alert("Vytautas");
+}
 
 // uzduotis 3
-function sum(name, lastName) {
-  const sum = name.length + lastName.length;
-  return sum;
-}
-console.log(sum("Vytautas", "Berzvinskas"));
+document.querySelector("#name").addEventListener("click", () => document.querySelector("p").textContent = "Apie mane");
 
-//uzduotis 4
+//uzduotis 4 
+document.querySelector("#sk").addEventListener("click", () => document.querySelector("#skaicius").textContent = "2");
 
-function abc(raide) {
-  let array = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "y",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "z",
-  ];
-  raide--;
-  raide = array[raide];
-  return raide;
-}
-console.log(abc("2"));
+//uzduotis 5 
+document.querySelector("#ilgasTekstas").addEventListener("copy", () => alert("Kopijuoti draudziama"));
 
-// uzduotis 5
-function calc(x, y, z) {
-  if (z === "sum") {
-    rez = x + y;
-    return rez;
-  } else if (z === "sub") {
-    rez = x - y;
-    return rez;
-  } else if (z === "div") {
-    rez = x / y;
-    return rez;
-  } else if (z === "multi") {
-    fit = x * y;
-    return fit;
-  }
+//uzduotis 6 
+function random (x,y){
+  let sk = Math.random();
+  sk = sk * y;
+  sk = sk + x;
+  sk = Math.floor(sk);
+  return sk;
 }
-console.log(calc(5, 5, "sum"));
+document.querySelector("#but6").addEventListener("click", () => document.querySelector("#random").textContent = random(1, 100));
 
-// uzduotis 6
+//uzduotis 7
+document.querySelector("#over18").addEventListener("click", () => document.querySelector("#over18").innerHTML += "<h1>Alus</h1>");
+document.querySelector("#no18").addEventListener("click", () => alert ("Nepilnametis - nieko neturim") );
 
-function rnd(x, y) {
-  skaicius = Math.random();
-  skaicius = skaicius * 10;
-  skaicius = skaicius + 1;
-  skaicius = Math.floor(skaicius);
-  return skaicius;
-}
-function qva(x) {
-  z = x * x;
-  return z;
-}
-console.log(qva(rnd()));
+//uzduotis 8 
+const win = random(1, 3);
+console.log(win);
+
+document.querySelector("#sk1").addEventListener("click", () => win === 1 ? alert("Yay") : alert("Nay"));
+document.querySelector("#sk2").addEventListener("click", () => win === 2 ? alert("Yay") : alert("Nay"));
+document.querySelector("#sk3").addEventListener("click", () => win === 3 ? alert("Yay") : alert("Nay"));
+
+//uzduotis 9 
+document.getElementsByClassName("button").addEventListener("click", () => document.querySelector("#nespausk").textContent = "Neklausote manes");
+//document.getElementsByClassName("button").addEventListener("click", () => alert("s"));
+
+//uzduotis 10
