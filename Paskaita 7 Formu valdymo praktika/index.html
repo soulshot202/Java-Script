@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/FavIcon/favicon.ico" type="image/x-icon" />
+    <script defer src="index.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="someForm">
+      <label for="stazas">Kiek metu dirbate musu imoneje?</label>
+      <input type="number" id="stazas" /><br />
+      <h3 id="result1"></h3>
+      <button type="submit" id="uzd1Btn">Submit</button><br />
+      <!-- //uzduotis2 -->
+      <label for="metai">Iveskite metus</label>
+      <input
+        type="number"
+        id="metai"
+        max="2200"
+        min="1800"
+        style="width: 70px" /><br />
+      <h2 id="uzd2res"></h2>
+      <br />
+      <!-- uzduotis 3  -->
+      <label for="temp">irasykite kokia dabar temperatura C°:</label>
+      <input type="number" id="temp" /> =
+      <input type="text" id="farenheit" />
+      <label for="farenheit"> F°</label><br />
+      <!-- uzduotis4 -->
+      <br /><label for="email">Iveskite savo el pasta:</label>
+      <input type="email" id="email" />
+      <input type="checkbox" name="check" id="check" />
+      <label for="check" style="color: green">Sutinku gauti laiskus</label>
+      <button type="button" id="register">Registruotis</button> <br /><br />
+      <!-- uzduotis 5  -->
+      <label for="name">Vardas:</label>
+      <input type="text" id="name" style="width: 100px" />
+      <label for="skaicius">Tavo skaicius:</label>
+      <input type="number" id="skaicius" style="width: 50px" />
+      <ul id="listas"></ul>
+
+      <!-- uzduotis 6  -->
+      <label for="uzd6Number">Iveskite skaiciu:</label>
+      <input type="number" id="uzd6Number" style="width: 50px" /><br /><br />
+    </form>
+    <div id="staciakampis"></div>
+  </body>
+</html>
