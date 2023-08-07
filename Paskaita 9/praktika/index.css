@@ -1,0 +1,29 @@
+.vardas2x {
+  font-size: 4rem;
+  color: red;
+  text-align: center;
+}
+
+.virsus-kaire {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.apacia-kaire {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.virsus-desine {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.apacia-desine {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+h1 {
+  color: rgb(155, 100, 112);
+}

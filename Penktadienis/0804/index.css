@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+}
+
+aside {
+  /* display: none; */
+  position: absolute;
+  width: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  background-color: burlywood;
+  transition: all 1s ease-in;
+}
+
+.offScreen {
+  transform: translateX(150px);
+}
+
+.onScreen {
+  transform: translateX(0);
+}
+
+aside > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .burgerMenu {
+    display: inline;
+  }
+  nav {
+    display: none;
+  }
+}
