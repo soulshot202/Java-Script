@@ -15,7 +15,9 @@
 
 const fullNameInput = document.querySelector("#fullName");
 fullNameInput.addEventListener("blur", splitName);
-
+document
+  .querySelector("#someForm")
+  .addEventListener("submit", (e) => e.preventDefault());
 function splitName() {
   const vardas1 = new vardas(fullNameInput.value.trim());
 
@@ -103,11 +105,13 @@ class Car {
     insideDiv.style.margin = "10px";
     insideDiv.classList.add("inside-cont");
     insideDiv.id = this.id;
-
+    const kaina = cars[this.id - 1].price;
     body.append(div);
     div.appendChild(insideDiv);
     insideDiv.append(img, h4);
-    insideDiv.addEventListener("click", () => alert("kaina:", this.id.price));
+    insideDiv.addEventListener("click", () => {
+      alert(`Kaina: ${kaina}`);
+    });
   }
 }
 
