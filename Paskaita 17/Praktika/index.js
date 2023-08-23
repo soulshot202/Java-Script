@@ -15,9 +15,7 @@
 
 const fullNameInput = document.querySelector("#fullName");
 fullNameInput.addEventListener("blur", splitName);
-document
-  .querySelector("#someForm")
-  .addEventListener("submit", (e) => e.preventDefault());
+
 function splitName() {
   const vardas1 = new vardas(fullNameInput.value.trim());
 
@@ -61,6 +59,16 @@ class vardas {
 //Paspaudus ant automobilio bloko - turi alert
 //išmesti kainą
 
+//uzduotis 2
+//Sukurkite HTML formą, kurioje vartotojas galės
+//įrašyti (į input laukelius): car brand, model,
+//mileage, price ir image (url laukelis).
+//Per konstruktorių, sukuriams objektas ir
+//jis atvaizduojamas po forma (CSS rašykite CSS'e)
+// kaip atvaizduota nuotraukoje apačioje.
+//Paspaudus ant automobilio bloko - turi alert
+//išmesti kainą
+
 const brandInput = document.querySelector("#brand");
 const modelInput = document.querySelector("#model");
 const priceInput = document.querySelector("#price");
@@ -80,10 +88,10 @@ function formSubmit(e) {
   const image = imageInput.value;
   const newCar = new Car(brand, model, price, mileage, image);
   cars.push(newCar);
-  console.log(cars);
+
   newCar.addCar();
 }
-console.log(Math.random());
+
 class Car {
   constructor(brand, model, price, mileage, image) {
     this.brand = brand;
@@ -105,13 +113,11 @@ class Car {
     insideDiv.style.margin = "10px";
     insideDiv.classList.add("inside-cont");
     insideDiv.id = this.id;
-    const kaina = cars[this.id - 1].price;
+
     body.append(div);
     div.appendChild(insideDiv);
     insideDiv.append(img, h4);
-    insideDiv.addEventListener("click", () => {
-      alert(`Kaina: ${kaina}`);
-    });
+    insideDiv.addEventListener("click", () => alert(`Kaina: ${this.price}`));
   }
 }
 
@@ -121,4 +127,4 @@ class Car {
 //pasikartojančius skaičius bei šį masyvą grąžins atgal
 const array = [1, 2, 1, 1, 3, 4, 5, 5, 2, 3];
 const filteredarray = [...new Set(array)];
-console.log(filteredarray);
+console.log("uzduotis 3", filteredarray);
