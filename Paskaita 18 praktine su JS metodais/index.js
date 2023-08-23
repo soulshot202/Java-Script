@@ -85,6 +85,10 @@ function checkString(string) {
 }
 
 console.log("uzduotis 3:", checkString("labaS 15 Vakaras 20 kaip, sekasi?"));
+//kitas variantas
+//const duplicateAllLetters = (text) => text.split('').map(element => element.match(/[a-z]/i) ?
+// element.repeat(2) : element).join('');
+//console.log(duplicateAllLetters('Petras 123 Slekys'));
 
 //uzduotis 4
 //Parašykite funkciją, kuri tikrins ar paduotas
