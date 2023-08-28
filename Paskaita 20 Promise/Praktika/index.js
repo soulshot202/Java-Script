@@ -44,6 +44,6 @@ const pazadas3 = new Promise((resolve, reject) => {
   }, 5000);
 });
 pazadas3
-  .then(() => 2 + 2 + " uzduotis 3")
+  .then(() => "uzduotis 3 atlikta")
   .then((res) => console.log(res))
   .catch(() => console.log("deja nepavyko"));
