@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/FavIcon/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <script type="module" src="index.js"></script>
+    <title>Paskaita 24 Praktika su Fetch GET ir POST</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="container-fluid text-bg-success py-4 ps-5"
+        style="--bs-bg-opacity: 0.6">
+        <div class="my-auto">
+          <h6 class="mb-0 fs-3">Add your property for sale</h6>
+          <p class="mb-0">Yes, you can sell where you live and get cash!</p>
+        </div>
+      </div>
+    </header>
+    <div class="ps-5 my-3">
+      <p>Add property</p>
+      <form action="" id="addForm">
+        <label for="imgUrl" class="fw-bold">img</label><br />
+        <input type="url" id="imgUrl" /><br />
+        <label for="price" class="fw-bold">Price, EUR</label><br />
+        <input type="number" name="" id="price" class="fw-bold" /><br />
+        <label for="description" class="fw-bold">Description</label><br />
+        <textarea name="" id="description" cols="30" rows="10"></textarea><br />
+        <label for="city" class="fw-bold">City</label><br />
+        <select name="city" id="city">
+          <option value="Vilnius">Vilnius</option>
+          <option value="Kaunas">Kaunas</option>
+          <option value="Klaipeda">Klaipėda</option>
+          <option value="Siauliai">Šiauliai</option>
+          <option value="Panevezys">Panevėžys</option></select
+        ><br />
+        <br /><button id="addButton" type="submit">Add property</button>
+      </form>
+    </div>
+  </body>
+</html>
