@@ -24,14 +24,30 @@
       </div>
     </header>
     <div class="ps-5 my-3">
-      <p>Add property</p>
-      <form action="" id="addForm">
+      <p class="fw-bold underline"><u>Add property</u>---></p>
+      <form action="" id="addForm" class="width90">
         <label for="imgUrl" class="fw-bold">img</label><br />
-        <input type="url" id="imgUrl" /><br />
+        <input
+          type="url"
+          id="imgUrl"
+          style="width: 90%"
+          placeholder="https://gifdb.com/images/high/loading-forever-skeleton-remains-w98gv9ncvibv89c9.gif" /><br />
         <label for="price" class="fw-bold">Price, EUR</label><br />
-        <input type="number" name="" id="price" class="fw-bold" /><br />
+        <input
+          type="number"
+          name=""
+          id="price"
+          style="width: 90%"
+          placeholder="Enter your price.." /><br />
         <label for="description" class="fw-bold">Description</label><br />
-        <textarea name="" id="description" cols="30" rows="10"></textarea><br />
+        <textarea
+          name=""
+          id="description"
+          cols="30"
+          rows="10"
+          style="width: 90%"
+          placeholder="Can you say more about this property?"></textarea
+        ><br />
         <label for="city" class="fw-bold">City</label><br />
         <select name="city" id="city">
           <option value="Vilnius">Vilnius</option>
@@ -40,7 +56,17 @@
           <option value="Siauliai">Šiauliai</option>
           <option value="Panevezys">Panevėžys</option></select
         ><br />
-        <br /><button id="addButton" type="submit">Add property</button>
+        <br /><button
+          id="addButton"
+          type="submit"
+          class="bg-success p-1 px-2 text-light rounded">
+          Add property</button
+        ><button
+          id="cancelButton"
+          type="submit"
+          class="bg-danger p-1 px-4 ms-2 text-light rounded">
+          Cancel
+        </button>
       </form>
     </div>
   </body>

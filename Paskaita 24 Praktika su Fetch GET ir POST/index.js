@@ -44,7 +44,7 @@ async function fetchData() {
       const data = await response.json();
       properties = data;
       getProperties(data);
-      console.log(properties);
+
       return data;
     }
   } catch (error) {
@@ -53,12 +53,13 @@ async function fetchData() {
 }
 fetchData();
 
+const visi = document.querySelector("#visi");
 const vilnius = document.querySelector("#vilnius");
 const kaunas = document.querySelector("#kaunas");
 const klaipeda = document.querySelector("#klaipeda");
 const siauliai = document.querySelector("#siauliai");
 const panevezys = document.querySelector("#panevezys");
-const allIds = [vilnius, kaunas, siauliai, klaipeda, panevezys];
+const allIds = [vilnius, kaunas, siauliai, klaipeda, panevezys, visi];
 vilnius.addEventListener("click", () => {
   filterProperties("Vilnius", vilnius);
 });
@@ -74,13 +75,13 @@ siauliai.addEventListener("click", () => {
 panevezys.addEventListener("click", () => {
   filterProperties("Panevezys", panevezys);
 });
-
-// function takeFilter(id) {
-//   allIds.forEach((e) => e.classList.remove("text-success"));
-//   allIds.forEach((e) => e.classList.add("mousePointer"));
-//   id.classList.remove("mousePointer");
-//   id.classList.add("text-success");
-// }
+visi.addEventListener("click", () => {
+  getProperties(properties);
+  allIds.forEach((e) => e.classList.remove("text-success"));
+  allIds.forEach((e) => e.classList.add("mousePointer", "border"));
+  visi.classList.remove("mousePointer", "border");
+  visi.classList.add("text-success");
+});
 
 function filterProperties(city, id) {
   const filtered = properties.filter((e) => e.city === city);

@@ -46,3 +46,7 @@ async function addData(data) {
     console.log(error);
   }
 }
+const cButton = document.querySelector("#cancelButton");
+cButton.addEventListener("click", () =>
+  window.location.replace("praktika.html")
+);
