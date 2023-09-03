@@ -1,5 +1,6 @@
 ///    BASE URL = https://robust-safe-crafter.glitch.me/
 let properties = [];
+const result = document.querySelector("#resContainer");
 
 function takeProperties(data) {
   const res = document.querySelector("#resContainer");
@@ -29,6 +30,7 @@ function takeProperties(data) {
 }
 
 function getProperties(properties) {
+  result.innerHTML = "";
   properties.forEach((el) => {
     takeProperties(el);
   });
@@ -50,3 +52,41 @@ async function fetchData() {
   }
 }
 fetchData();
+
+const vilnius = document.querySelector("#vilnius");
+const kaunas = document.querySelector("#kaunas");
+const klaipeda = document.querySelector("#klaipeda");
+const siauliai = document.querySelector("#siauliai");
+const panevezys = document.querySelector("#panevezys");
+const allIds = [vilnius, kaunas, siauliai, klaipeda, panevezys];
+vilnius.addEventListener("click", () => {
+  filterProperties("Vilnius", vilnius);
+});
+kaunas.addEventListener("click", () => {
+  filterProperties("Kaunas", kaunas);
+});
+klaipeda.addEventListener("click", () => {
+  filterProperties("Klaipeda", klaipeda);
+});
+siauliai.addEventListener("click", () => {
+  filterProperties("Siauliai", siauliai);
+});
+panevezys.addEventListener("click", () => {
+  filterProperties("Panevezys", panevezys);
+});
+
+// function takeFilter(id) {
+//   allIds.forEach((e) => e.classList.remove("text-success"));
+//   allIds.forEach((e) => e.classList.add("mousePointer"));
+//   id.classList.remove("mousePointer");
+//   id.classList.add("text-success");
+// }
+
+function filterProperties(city, id) {
+  const filtered = properties.filter((e) => e.city === city);
+  getProperties(filtered);
+  allIds.forEach((e) => e.classList.remove("text-success"));
+  allIds.forEach((e) => e.classList.add("mousePointer", "border"));
+  id.classList.remove("mousePointer", "border");
+  id.classList.add("text-success");
+}

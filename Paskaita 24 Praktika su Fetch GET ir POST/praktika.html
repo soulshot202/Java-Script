@@ -10,6 +10,7 @@
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
@@ -24,29 +25,39 @@
     </header>
     <p class="ps-5 my-3">Filter:</p>
     <div class="d-flex justify-content-between mx-4 mx-5">
-      <div class="flex-row d-flex">
+      <div class="flex-row d-flex" id="filter">
         <div
-          class="px-2 py-1 mx-1 border border-success-subtle text-success"
+          class="px-2 py-1 mx-1 border border-success-subtle mousePointer border2px"
           id="vilnius">
           Vilnius
         </div>
-        <div class="px-2 py-1 border border-success-subtle" id="kaunas">
+        <div
+          class="px-2 py-1 border border-success-subtle mousePointer border2px"
+          id="kaunas">
           Kaunas
         </div>
-        <div class="px-2 py-1 mx-1 border border-success-subtle" id="klaipeda">
+        <div
+          class="px-2 py-1 mx-1 border border-success-subtle mousePointer border2px"
+          id="klaipeda">
           Klaipėda
         </div>
-        <div class="px-2 py-1 border border-success-subtle" id="siauliai">
+        <div
+          class="px-2 py-1 border border-success-subtle mousePointer border2px"
+          id="siauliai">
           Šiauliai
         </div>
-        <div class="px-2 py-1 mx-1 border border-success-subtle" id="panevezys">
+        <div
+          class="px-2 py-1 mx-1 border border-success-subtle mousePointer border2px"
+          id="panevezys">
           Panevėžys
         </div>
       </div>
       <div
         class="bg-success p-1 px-2 text-light rounded"
         style="--bs-bg-opacity: 0.6">
-        Add Property +
+        <a href="add.html" class="text-decoration-none text-white"
+          >Add Property +</a
+        >
       </div>
     </div>
 
