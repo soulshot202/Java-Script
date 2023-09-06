@@ -1,0 +1,123 @@
+img {
+  max-width: 50%;
+  border-radius: 300px;
+  margin-top: 30px;
+}
+#mainContainer {
+  background-color: rgba(189, 181, 181, 0.603);
+  padding: 20px;
+}
+.div2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 70vh;
+  margin-right: 50px;
+  background-color: rgb(44, 132, 247);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+#peopleTab {
+  /* background-color: rgb(44, 132, 247); */
+  /* margin: 10px 0 0 0; */
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  justify-content: space-between;
+
+  height: 100%;
+}
+.center {
+  text-align: center;
+}
+.white {
+  color: white;
+}
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.marginBottom {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+#aboutTab {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  width: 70vw;
+  height: 100%;
+  padding: 30px;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 30px;
+}
+.marginLeft1 {
+  margin-left: 20px;
+}
+.cont2 {
+  margin: 20px;
+}
+
+.cont2-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.divL {
+  width: 25%;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  /* align-items: right; */
+  flex-direction: column;
+}
+.divR {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.divL h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.p1 {
+  font-size: 12px;
+  color: grey;
+  margin-top: 5px;
+}
+.tomato {
+  color: tomato;
+}
+.divOut {
+  width: 100%;
+  border: 1px solid grey;
+  height: 3px;
+}
+.divIn {
+  width: 65%;
+  background-color: blue;
+  height: 2px;
+}
+.sp1 {
+  /* font-size: 12px; */
+  color: grey;
+}
+.skillBar {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#sec1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 35%;
+}
